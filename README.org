@@ -1,4 +1,6 @@
-* Elisp Genetic Algorithm <2013-06-30 Sun>
+* Elisp Genetic Algorithm
 
 Some elisp that uses a genetic algorthim to evolve random strings to
 some ideal target. Just for fun.
+
+Sunday 30th June, 2013.
