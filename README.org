@@ -4,3 +4,22 @@ Some elisp that uses a genetic algorthim to evolve random strings to
 some ideal target. Just for fun.
 
 Sunday 30th June, 2013.
+
+** Conclusions
+
+I'd say it works pretty well. Strings 'evolve' towards the target
+string pretty rapidly. The algorithm can get within one or two steps
+of the target string surprisingly quickly. But those last couple of
+steps are slow. For small changes, mutation is the only thing that
+gets the genes closer, and that's equivalent to random
+search.
+
+So, my conclusions are:
+
+- It's surprisingly easy to implement.
+- It's a good algorithm for finding a close-enough solution.
+
+In addition, I /suspect/ having a smooth fitness function - one that can
+always rank the impact minor changes accurately - is very
+important. The nice thing about the string problem is that our fitness
+function - levenshtein distance - has a very even path to the goal.
