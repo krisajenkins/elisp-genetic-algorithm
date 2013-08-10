@@ -96,7 +96,7 @@
 
 (defun ga/main
   (target threshold)
-  "CREATE A RANDOM GENEPOOL, AND EVOLVE WITH A FITNESS FUNCTION THAT LIKES THE TARGET string.
+  "Create a random genepool, and evolve with a fitness function that likes the target string.
    Stop as soon as the fittest gene is within the threshold of the target."
   (let ((pool (ga/create-pool 10 10))
 		(generation 0))
